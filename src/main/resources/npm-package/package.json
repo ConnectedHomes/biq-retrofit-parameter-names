@@ -1,0 +1,10 @@
+{
+  "name": "retrofit-parameter-names",
+  "version": "0.0.1",
+  "description": "Mapping between retrofit parameter codes and names",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "main": "lib/parameter-codes.js"
+}
