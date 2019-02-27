@@ -12,3 +12,5 @@ project/project
 project/settings
 
 *.tgz
+
+src/main/resources/npm-package
