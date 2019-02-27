@@ -1,0 +1,19 @@
+
+@(parameterNames: TraversableOnce[(String, Int)])
+
+package uk.co.bgch.retrofit.parameters
+
+object ParameterNames {
+  @for((name, value) <- parameterNames) {
+    val @name = @{value}L
+  }
+
+  def codeForName(name: String): Option[Long] = {
+    name match {
+        @for((name, value) <- parameterNames) {
+            case "@name" => Some(@value)
+        }
+        case _ => None
+    }
+  }
+}
