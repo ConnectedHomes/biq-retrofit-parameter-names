@@ -8,4 +8,4 @@ pushd npm-package
 sed -i 's/"version": ".*"/"version": "'"${BUILD_NUMBER}"'"/g' package.json
 npm pack
 popd
-tar -C src/main/resources -czvf retrofit-parameter-names-${BUILD_NUMBER}.tar.gz parameters.csv
+gzip -c src/main/resources/parameters.csv > retrofit-parameter-names-${BUILD_NUMBER}.csv.gz
