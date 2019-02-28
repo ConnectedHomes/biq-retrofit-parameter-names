@@ -1,4 +1,4 @@
-Parameter Name, Parameter Code,Origin
+Name,Code,Origin
 Central_Heating_Demand,100,common
 Domestic_Hot_Water_Demand,101,common
 Appliance_Current,102,common
