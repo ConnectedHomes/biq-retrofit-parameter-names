@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 pushd retrofit-parameter-templates
-sbt clean +compile +publishLocal
+sbt clean +publishLocal
 popd
-sbt clean +compile +publishLocal
+sbt clean +publishLocal
+pushd npm-package
+npm pack
+popd

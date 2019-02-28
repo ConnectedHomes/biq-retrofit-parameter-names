@@ -1,5 +1,5 @@
 import sbt._
-import sbt.Keys.{resourceDirectory, scalaVersion, _}
+import sbt.Keys._
 import SourceGenerator._
 
 lazy val `retrofit-parameter-names` =
@@ -8,7 +8,7 @@ lazy val `retrofit-parameter-names` =
       (sourceGenerators in Compile) += Def.task {
         val resources = (resourceDirectory in Compile).value
         val parameterFile = resources / "parameters.csv"
-        generateJavascriptParameterMetadata(parameterFile, resources / "npm-package/lib")
+        generateJavascriptParameterMetadata(parameterFile, file("./npm-package/lib"))
         generateScalaParameterMetadata(parameterFile, (sourceManaged in Compile).value)
 
       }.taskValue,

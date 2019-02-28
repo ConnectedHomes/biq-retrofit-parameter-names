@@ -13,5 +13,5 @@ project/settings
 
 *.tgz
 
-src/main/resources/npm-package/lib/
-src/main/resources/npm-package/node_modules/
+npm-package/lib/
+npm-package/node_modules/
