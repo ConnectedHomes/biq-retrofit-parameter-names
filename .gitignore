@@ -1,0 +1,17 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+.sbtserver
+
+project/project
+project/settings
+
+*.tgz
+
+npm-package/lib/
+npm-package/node_modules/

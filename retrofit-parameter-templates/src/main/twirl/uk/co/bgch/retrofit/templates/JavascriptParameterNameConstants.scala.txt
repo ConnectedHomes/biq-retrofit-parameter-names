@@ -1,0 +1,6 @@
+
+@(parameterNames: TraversableOnce[(String, Int)])
+
+module.exports = {
+  @parameterNames.map { case (name, value) => "@{value}": "@{name}" }.mkString(",\n")
+}
